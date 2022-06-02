@@ -1,0 +1,26 @@
+<body>
+<form [formGroup]="form" (submit)="submit()">
+  
+  <h1 class="h3 mb-3 fw-normal" style="font-family: 'Times New Roman', Times, serif;font-style: oblique;font-size: 45px;">Please Sign in </h1>
+    <div class="form-floating">
+      <label for="floatingInput" style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">Email address</label>
+      <input formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      
+    </div>
+    <div class="form-floating">
+      <label for="floatingPassword" style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+
+    </div>
+
+    <div class="checkbox mb-3">
+      <label style="font: size 20px  ;font-family: 'Times New Roman', Times, serif;">
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <div class="col-md-11 text-center">
+      <button class="w-50 btn btn-lg  btn-info" type="submit"   ><h4 style="font-family:'Times New Roman', Times, serif;font-size: 25px;">Sign in</h4></button> </div>
+      
+    
+  </form>
+</body>
